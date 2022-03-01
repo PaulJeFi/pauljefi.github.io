@@ -1,0 +1,53 @@
+#my-canvas {
+    border: 1px solid rgb(183, 0, 255); 
+    position: absolute;
+    top: 170%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+body
+{
+    background-color: rgb(0, 0, 0);
+}
+
+#description {
+    width: 100%;
+	height: 60px;
+	left: 0px;
+	top: 0;
+	color: white;
+	text-align: center;
+
+}
+
+#titre-mandelbrot {
+    width: 100%;
+	height: 60px;
+	left: 0px;
+	top: 0;
+	color: rgb(255, 0, 0);
+	text-align: center;
+}
+
+form {
+    color: rgb(255, 255, 0);
+    text-align: center;
+}
+
+#bouton {
+    text-align: center;
+    left: 50%;
+}
+
+#author {
+    color: rgb(255, 0, 255);
+}
+
+#butom {
+    background-color: white;
+    color: black;
+    height: 20px;
+    width: 50px;
+}

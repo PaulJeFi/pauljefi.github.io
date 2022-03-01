@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Tracer l'ensemble de Mandelbrot</title>
+        <script defer src="./mandelbrot.js"></script>
+
+        <p id='author'>Réalisé par Paul JÉRÔME--FILIO.</p>
+
+    </head>
+    <body>
+        <h1 id='titre-mandelbrot'>Tracez facilement l'ensemble de Mandelbrot !</h1>
+        <p id='description'>
+            Ci-dessous, vous pouvez tracer l'ensemlbe de Mandelbrot avec une
+            certaine itération. Choisissez votre itération (plus elle est
+            élevée, plus cela prendra du temps et fera travailler votre
+            ordinateur), puis cliquer sur Tracer pour tracer l'ensemble.
+        </p>
+
+
+        <p id='description'>
+            Cette page est <i>très</i> moche. <a href="./DaVinci/accueil.html">Cliquez ici</a>
+            pour en voir une assez belle.
+            <br>
+            <a href="https://fr.wikipedia.org/wiki/Ensemble_de_Mandelbrot">Cliquez ici</a> pour en savoir plus sur cet ensemble !
+        </p>
+
+        <form name='get_iter'>
+            <p>Itérations <input type="text" name="iter" value="50" id='tkt' onclick="changesize(iter)"></p>
+        </form>
+        <p id='bouton'>
+            <input type="button" id='butom' name="button" value="Tracer" onclick="mandelbrot(get_iter)"
+            onmouseenter="resertsize(document.querySelector('#tkt'));mouseenter(document.querySelector('#butom'))"
+            onmouseleave="mouseleave(document.querySelector('#butom'))">
+        </p>
+        <canvas id="my-canvas" width="800" height="800"></canvas>
+
+
+    </body>
+</html>
