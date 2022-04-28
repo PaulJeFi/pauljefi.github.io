@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chart.js test</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#r").on("input", function() {
+            myChart.destroy(); myChart = create();
+            }
+            );
+        });
+        </script>
+</head>
+<body>
+    <!--onclick="myChart.destroy(); myChart = create();"
+   onformchange="myChart.destroy(); myChart = create();" -->
+    <input type="range" id="r"
+   value="2" min="0" max="4" step="0.001" > Valeur de r</input>  
+   <p id="r_text">r = 2</p>
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+      <script>
+        function create() {
+
+            var r =  document.getElementById('r').value;
+
+            var r_text = document.getElementById('r_text');
+            r_text.innerHTML = "r = "+r
+
+            function may(x, y) {
+                return r*x*(1-x)
+            }
+
+            var labels = [];
+            for (var i=0; i<=100; i++) {
+                labels.push(i);
+            }
+            
+            var datas = [];
+            var u = 0.2;
+            for (var x of labels) {
+                u = may(u, r);
+                datas.push(u);
+            }
+
+            var data = {
+            labels: labels,
+            datasets: [{
+                label: 'Population',
+                backgroundColor: 'rgb(255, 0, 0)',
+                borderColor: 'rgb(255, 0, 0)',
+                data: datas,
+            },
+            {
+                label: ' ',
+                backgroundColor: 'rgb(255, 255, 255)',
+                borderColor: 'rgb(255, 255, 255)',
+                data: [1],
+            }]
+            };
+        
+            var config = {
+            type: 'line',
+            data: data,
+            options: {}
+            };
+
+            return new Chart(
+            document.getElementById('myChart'),
+            config
+            );
+        }
+
+        var myChart = create();
+      </script>
+</body>
+</html>
