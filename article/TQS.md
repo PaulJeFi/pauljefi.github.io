@@ -7,8 +7,8 @@ A tactical quiescence search (TQS) is a [quiescence search algorithm](https://ww
 [Quiescence Search algorithm](https://www.chessprogramming.org/Quiescence_Search) (QS) is used to be sure that the engine will analyse only quiet positions, in order to be sure it will not miss [tactical moves](https://www.chessprogramming.org/Tactical_Moves). But [tactics](https://www.chessprogramming.org/Tactics) in QS are often based on [cature-only moves](https://www.chessprogramming.org/Captures) and sometimes on [checking moves](https://www.chessprogramming.org/Check).
 
 The idea in TQS is that tactics are not only capture or checking moves. So the TQS algorithm should also consider other non-[quiet moves](https://www.chessprogramming.org/Quiet_Moves), like check-evader moves and [promotions](https://www.chessprogramming.org/Promotions).
-All thoses differents non-quiet moves are often what made tactical moves, and checking all of them is a way to be sure to not miss tactics.
-As it is shown in the  [example section](#examples) the TQS algorithm is good at finding differents types of tactics. But another [section](#pro--con) shows the advantages and disavantages of TQS.
+All thoses differents non-quiet moves are often what made tactical moves, and checking all of them is a way to be sure not to miss tactics.
+As shown in the  [example section](#examples) the TQS algorithm is good at finding differents types of tactics. But another [section](#pro--con) shows the advantages and disavantages of TQS.
 
 ## Pseudo Code
 
