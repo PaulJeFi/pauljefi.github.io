@@ -1,6 +1,6 @@
 # Tactical Quiescence Search (TQS)
 
-A tactical quiescence search (TQS) is a [quiescence search algorithm](https://www.chessprogramming.org/Quiescence_Search) with more severals [extensions](https://www.chessprogramming.org/Extensions). It allows the engine to not miss tactics that are not based on capture-only moves.
+A tactical quiescence search (TQS) is a [quiescence search algorithm](https://www.chessprogramming.org/Quiescence_Search) with more further [extensions](https://www.chessprogramming.org/Extensions). It allows the engine not to miss tactics that are not based on capture-only moves.
 
 ## The idea
 
