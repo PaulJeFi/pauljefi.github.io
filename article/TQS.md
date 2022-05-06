@@ -172,7 +172,7 @@ As each move gives or responds to a check, TQS will see the right sequence.
 <a href="https://lichess.org/analysis/standard/r1r3k1/2PR1ppp/4pppp/p3P3/8/P7/5PPP/4R1K1_w_-_-_0_1"><img src="./images/pos4.png" width="300" height="300"></a>\
 White to play. FEN : ```r1r3k1/2PR1ppp/4pppp/p3P3/8/P7/5PPP/4R1K1 w - - 0 1```
 
-Here, the correct answer is ```1. Red1```, preparing ```2. Rd8+ Rxd8 3. Rxd8+ Rxd8 4. exd8=Q#```. However, Black plays ```1... Re8``` and avoid mate, but after ```2. Rd8 Kf8 3. Rxa8 Rxa8 4. Rd8+ Ke7 5. Rxa8``` and the promotion ```6. c8=8``` is inavoidable. So in this position White can safely promote the c pawn.\
+Here, the correct answer is ```1. Red1```, preparing ```2. Rd8+ Rxd8 3. Rxd8+ Rxd8 4. exd8=Q#```. However, Black plays ```1... Re8``` and avoid mate, but after ```2. Rd8 Kf8 3. Rxa8 Rxa8 4. Rd8+ Ke7 5. Rxa8``` and the promotion ```6. c8=8``` is unavoidable. So in this position White can safely promote the c pawn.\
 However a classical QS (even with check-extensions + check evasions) would never see the promotion and abort this line.\
 Here, even TQS will not see the right line, but {search depth 4 + TQS} will see it while {search depth 4 + QS} will not see it, due to pawn promotion (depth 4 is where the first capture occurs).
 
