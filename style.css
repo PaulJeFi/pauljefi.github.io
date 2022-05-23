@@ -1,10 +1,13 @@
 #my-canvas {
     border: 1px solid rgb(183, 0, 255); 
+    /*
     position: absolute;
     top: 170%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    */
+    padding: 10%;
 }
 
 body
