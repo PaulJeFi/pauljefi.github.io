@@ -147,7 +147,7 @@ In this section, the following position has been considered to compare classic Q
 Black to play. FEN : ```rk4r1/ppp2qBQ/3p1R2/8/2P5/2PP2P1/P2K4/3R4 b - - 0 1```
 
 Here, the best move is ```1... Qe8```.\
-But a classical quiescence search with no check-extension will find ```1... Qxg7``` as the best move, because ```2. Qxg7 Rxg7``` wins the bishop. But without check extension, the QS is oblivious to 3. Rd8#.\
+But a classical quiescence search with no check-extension will find ```1... Qxg7``` as the best move, because ```2. Qxg7 Rxg7``` wins the bishop. But without check extension, the QS is oblivious to ```3. Rf8#```.\
 In this case, TQS finds ```1... Qe8``` as the best move.
 
 
@@ -155,9 +155,9 @@ In this case, TQS finds ```1... Qe8``` as the best move.
 <a href="https://lichess.org/analysis/fromPosition/rnbqk2r/ppp2ppp/3ppn2/3P4/1bP5/2N5/PP2PPPP/R1BQKBNR_w_KQkq_-_0_1"><img src="./images/pos2.png" width="300" height="300"></a>\
 White to play. FEN : ```rnbqk2r/ppp2ppp/3ppn2/3P4/1bP5/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 1```
 
-Here, the best move is ```1. Qa6+```.\
-A classical QS + check-extensions can see that move, but as it gives check and there is not any possible captures or checking moves after ```1. Qa6+```, QS will ask an [evaluation](https://www.chessprogramming.org/Evaluation). Unless [SEE](https://www.chessprogramming.org/Static_Exchange_Evaluation) is implemented in evaluation, QS will not see why this move is so good, taking the bishop in b4.\
-However, TQS will see all possible tactical lines after ```1. Qa6+``` and will see that White is winning a bishop (or a knight after ```1... Nc6```).
+Here, the best move is ```1. Qa4+```.\
+A classical QS + check-extensions can see that move, but as it gives check and there is not any possible captures or checking moves after ```1. Qa4+```, QS will ask an [evaluation](https://www.chessprogramming.org/Evaluation). Unless [SEE](https://www.chessprogramming.org/Static_Exchange_Evaluation) is implemented in evaluation, QS will not see why this move is so good, taking the bishop in b4.\
+However, TQS will see all possible tactical lines after ```1. Qa4+``` and will see that White is winning a bishop (or a knight after ```1... Nc6```).
 
 ### Check-extensions + Check evasions
 <a href="https://lichess.org/analysis/fromPosition/3r2k1/1p3p2/p1n3p1/5bQp/8/P1B5/1P3qPP/4R2K_w_-_-_0_1"><img src="./images/pos3.png" width="300" height="300"></a>\
