@@ -41,7 +41,7 @@ int TQS(int alpha, int beta, int check_depth=10) { // check_depth could be chang
         }
     }
     // lower bound
-    mating_value = mating_value = -mateValue + nodeHeight;
+    mating_value = -mateValue + nodeHeight;
     if (mating_value >= alpha) {
         alpha = mating_value;
         if (beta <= mating_value) {
