@@ -23,7 +23,7 @@ iter 2 :  'VVM'              On plie encore : sur la couche du dessus, le pli
                              pli vallée s'inverse à cause du premier pli vallée
                              déjà présent, et donc passe en montagne.
 iter 3 :  'VVMVVMM'          Même principe.
-iter 4 :  ''VVMVVMMVVVMMVMM' Pareil.
+iter 4 :  'VVMVVMMVVVMMVMM' Pareil.
 ```
 
 ## Code en Python
