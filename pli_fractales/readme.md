@@ -1,5 +1,5 @@
 # Pliage de fractales
-Un algorithme pour plier la courbe du dragon est bien connu : [en voici la page Wikipédia](https://fr.wikipedia.org/wiki/Suite_de_pliage_de_papier). Il consiste à plier en deux une longgue bandelette de papier en deux, puis en deux et encore en deux et ainsi de suite à l'infini. On déplie ensuite tous les plis à 90° comme sur le figure du processus suivante :\
+Un algorithme pour plier la courbe du dragon est bien connu : [en voici la page Wikipédia](https://fr.wikipedia.org/wiki/Suite_de_pliage_de_papier). Il consiste à plier en deux une longue bandelette de papier en deux, puis en deux et encore en deux et ainsi de suite à l'infini. On déplie ensuite tous les plis à 90° comme sur la figure du processus suivante :\
 <img src="./images/algo.png">\
 On obtient alors la courbe suivante :
 
