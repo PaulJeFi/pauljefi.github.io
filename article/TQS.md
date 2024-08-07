@@ -8,7 +8,7 @@ A tactical quiescence search (TQS) is a [quiescence search algorithm](https://ww
 
 TQS brings more to the table by considering other non-[quiet moves](https://www.chessprogramming.org/Quiet_Moves), like check-evader moves and [promotions](https://www.chessprogramming.org/Promotions).
 Non-quiet moves are the essence of tactical play, thus scrolling through them helps making better tactical decisions.
-In the [example](#Examples) section, the TQS remarquably finds several type of tactics. In the [limiting factors section](#pro--con), the pros and cons of the TQS are (further) discussed.
+In the [example](#Examples) section, the TQS remarquably finds several type of tactics. In the [limiting factors section](#pros--cons), the pros and cons of the TQS are (further) discussed.
 ## Pseudo Code
 
 Here is a pseudo C code for the TQS algorithm, where ```check_depth``` is the maximum amount of [check extension](https://www.chessprogramming.org/Check_Extensions) in a given line of quiescence search, and ```quiesce_moves()``` is a generator of all the differents quiescent moves mentionned above (captures, checks, promotions, check-evaders) :
