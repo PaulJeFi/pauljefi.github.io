@@ -20,3 +20,16 @@ In the past 7 days, on 13 to 15 years old Instagram users :
 
 > Who would have predicted that a company that started as a way to connect college students would be blamed for deteriorating mental health, genocidal violence and the rise of anti-democratic populism around the world?
 
+- 4 billion people regularly use Meta
+
+Socials medias encourage :
+- deterioration in self-esteem and mental health
+- anxiety
+- depression
+- addiction
+- feeling of envy and jealousy
+- **impinge** (empiète) on sleep
+- cyberbullying / online harassment
+- terrorism and mass violence
+- violent extremism / propaganda
+- drugs
