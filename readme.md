@@ -3,6 +3,7 @@ Hi, I'm Paul JF and I love to code !
 Here is the link if you want to access the [ENGLISH PT page](./pt-english/index.md).
 
 # [Mathématiques pour la physique](./physique.pdf)
+## [Correcteurs SLCI](./SLCI/SLCI.md)
 
 Here are some of my projects :
 
