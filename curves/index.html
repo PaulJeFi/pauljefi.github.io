@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Source : https://html5up.net/dimension
+-->
+<html>
+	<head>
+		<title>Dimension by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Surfaces Interdites</h1>
+								<h2>Le Plaisir Caché des Maths</h2>
+								<p>Attention, Padawans en herbe ! Cette page contient des équations si complexes qu'elles pourraient donner des cauchemars à un adolescent, et même faire basculer un Jedi du côté obscur des mathématiques. Si vous avez moins de 18 ans, veuillez retourner à vos coloriages de fonctions linéaires ou trouver une autre activité implicitement plus adaptée à votre âge. Accès réservé aux Padawans majeurs et aux Maîtres Jedi des équations implicites.</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="https://google.com">Je suis mineur.</a></li>
+								<li><a href="#courbes">J'ai plus de 18 ans.</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Work -->
+							<article id="courbes">
+								<h2 class="major">Courbes implicites</h2>
+								<h3>Sphère</h3>
+								<p>La sphère a pour équation \(\displaystyle \left(x-\omega_x\right)^2+\left(y-\omega_y\right)^2+\left(z-\omega_z\right)^2 = R^2\) où \(\displaystyle \Omega(\omega_x, \omega_y, \omega_z)\) est le centre et \(\displaystyle R\) le rayon.</p>
+								<span class="image main"><img src="images/1.jpg" alt="" /></span><br/>
+								<h3>Cône</h3>
+								<p>Le cône a pour équation \(\displaystyle \left(x-\omega_x\right)^2+\left(y-\omega_y\right)^2 = \left(z-\omega_z\right)^2\) où \(\displaystyle \Omega(\omega_x, \omega_y, \omega_z)\) est le sommet.</p>
+								<span class="image main"><img src="images/2.jpg" alt="" /></span><br/>
+								<br/>
+								<h3>Cylindre</h3>
+								<p>Le cylindre a pour équation \(\displaystyle \left(x-\omega_x\right)^2+\left(y-\omega_y\right)^2 = R^2\) où \(\displaystyle \Omega(\omega_x, \omega_y)\) est le centre et \(\displaystyle R\) le rayon.</p>
+								<span class="image main"><img src="images/3.jpg" alt="" /></span><br/>
+								<br/>
+								<h3>Hyperboloïde</h3>
+								<p>L'hyperboloïde a pour équation \(\displaystyle \left(x-\omega_x\right)^2+\left(y-\omega_y\right)^2-\left(z-\omega_z\right)^2 = R^2\) où \(\displaystyle \Omega(\omega_x, \omega_y, \omega_z)\) est le centre et \(\displaystyle R\) le rayon.</p>
+								<span class="image main"><img src="images/4.jpg" alt="" /></span><br/>
+								<br/>
+								<h3>Ellipsoïde</h3>
+								<p>L'ellipsoïde a pour équation \(\displaystyle \frac{\left(x-\omega_x\right)^2}{a^2}+\frac{\left(y-\omega_y\right)^2}{b^2}+\frac{\left(z-\omega_z\right)^2}{c^2} = 1\) où \(\displaystyle \Omega(\omega_x, \omega_y, \omega_z)\) est le centre et \(\displaystyle a\), \(\displaystyle b\) et \(\displaystyle c\) les demi-axes.</p>
+								<span class="image main"><img src="images/5.jpg" alt="" /></span><br/>
+								<br/>
+								<h3>Paraboloïde hyperbolique</h3>
+								<p>Le paraboloïde hyperbolique a pour équation \(\displaystyle z = \left(\frac{x}{a}\right)^2-\left(\frac{y}{b}\right)^{2}\).</p>
+								<span class="image main"><img src="images/6.jpg" alt="" /></span><br/>
+								<br/>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Curve & Taboo 1980-<span id="currentYear"></span></p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				const yearSpan = document.getElementById('currentYear');
+				if (yearSpan) {
+					yearSpan.textContent = new Date().getFullYear();
+				}
+			</script>
+
+	</body>
+</html>
