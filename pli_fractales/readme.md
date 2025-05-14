@@ -17,7 +17,7 @@ On a la feuille (pas encore pliée) suivante :
 On veut la plier selon le procédé précédemment expliqué. On note V les plis
 vallées et M les plis montagnes.
 
-iter 1 :  'V'                On ajoute un plis vallée au milieu
+iter 1 :  'V'                On ajoute un pli vallée au milieu
 iter 2 :  'VVM'              On plie encore : sur la couche du dessus, le pli
                              est en vallée. Mais sur la couche du dessous, le
                              pli vallée s'inverse à cause du premier pli vallée
@@ -68,7 +68,7 @@ Avec un code supplémentaire pour transformer notre "mot" de plis en affichage (
 
 <img src="./images/curve_13.png" width="684.5" height="576.0">
 
-On est alors en mesure de répondre à la question posée au dévut : que se passe-t-il si l'on plie la feuille en trois à chaque fois ? Ici avec 10 itérations :
+On est alors en mesure de répondre à la question posée au début : que se passe-t-il si l'on plie la feuille en trois à chaque fois ? Ici avec 10 itérations :
 
 <img src="./images/curve_2_10.png" width="987.0" height="755.0">
 <br><br><br><br><br><br><br><br><br><br><br>
