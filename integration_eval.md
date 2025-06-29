@@ -47,10 +47,15 @@ Soient $I = \displaystyle \int_{0}^{1}\frac{1}{\sqrt{x^2+2}}dx$, $J = \displayst
 On considère la fonction $f$ définie par $\displaystyle f(x) = \ln\left(x + \sqrt{x^2+2}\right)$.
 
 **1.a)** Justifier que la fonction $f$ est définie sur $[0\; ; \; 1]$.
+
 **b)** Montrer que la fonction $f$ est une primitive de la fonction définie telle que : $\displaystyle x \longmapsto \frac{1}{\sqrt{x^2 + 2}}$.
+
 **c)** Calculer alors $I$.
+
 **2.a)** Calculer $J + 2I$.
+
 **b)** Montrer, en intégrant par parties, que $K = \sqrt{3} - J$.
+
 **c)** En déduire les valeurs de $J$ et de $K$.
 
 
@@ -60,10 +65,15 @@ On considère la fonction $f$ définie par $\displaystyle f(x) = \ln\left(x + \s
 ###   <u>Exercice 5 :</u> ＊＊
 
 Soit $(u_n)$ la suite définie pour tout entier naturel $n$ par :
-$$u_n = \int_0^1 \frac{x^n}{1+x} dx$$
+
+$$
+u_n = \int_0^1 \frac{x^n}{1+x} dx
+$$
 **1)** Calculer $\displaystyle u_0$.
 **2.a)** Démontrer que :
-$$\forall n \in \mathbb{N}, \qquad u_{n+1}+u_n = \frac{1}{n+1}$$
+$$
+\forall n \in \mathbb{N}, \qquad u_{n+1}+u_n = \frac{1}{n+1}
+$$
 **b)** En déduire la valeur de $u_1$.
 **3)** Montrer que la suite $(u_n)$ est décroissante.
 
