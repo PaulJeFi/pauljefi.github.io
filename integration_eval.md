@@ -67,14 +67,19 @@ On considère la fonction $f$ définie par $\displaystyle f(x) = \ln\left(x + \s
 Soit $(u_n)$ la suite définie pour tout entier naturel $n$ par :
 
 $$
-u_n = \int_0^1 \frac{x^n}{1+x} dx
+\displaystyle u_n = \int_0^1 \frac{x^n}{1+x} dx
 $$
+
 **1)** Calculer $\displaystyle u_0$.
+
 **2.a)** Démontrer que :
+
 $$
-\forall n \in \mathbb{N}, \qquad u_{n+1}+u_n = \frac{1}{n+1}
+\displaystyle \forall n \in \mathbb{N}, \qquad u_{n+1}+u_n = \frac{1}{n+1}
 $$
+
 **b)** En déduire la valeur de $u_1$.
+
 **3)** Montrer que la suite $(u_n)$ est décroissante.
 
 
@@ -84,15 +89,23 @@ $$
 ###   <u>Exercice 6 :</u> ＊＊
 
 Soient $(I_n)$ et $(J_n)$ les suites définies sur $\mathbb{N}^*$ par :
-$$I_n = \int_0^1 \frac{1}{1+x^n} dx \qquad \text{et} \qquad J_n = \int_0^1 \frac{x^n}{1+x^n} dx$$
+
+$$\displaystyle I_n = \int_0^1 \frac{1}{1+x^n} dx \qquad \text{et} \qquad J_n = \int_0^1 \frac{x^n}{1+x^n} dx$$
 
 **1.a)** Montrer que :
-$$\forall x \in [0\; ; \; 1], \qquad \frac{1}{1+x^n} \leq 1$$
+
+$$\displastyle \forall x \in [0\; ; \; 1], \qquad \frac{1}{1+x^n} \leq 1$$
+
 **b)** en déduire que la suite $(I_n)$ est majorée par $1$.
+
 **2.a)** Montrer que :
-$$\forall n \in \mathbb{N}^*, \qquad 0 \leq J_n \leq \frac{1}{n+1}$$
+
+$$\displaystyle \forall n \in \mathbb{N}^*, \qquad 0 \leq J_n \leq \frac{1}{n+1}$$
+
 **b)** En déduire la limite de la suite $(J_n)$.
+
 **3.a)** Calculer $I_n + J_n$ pour $n$ dans $\mathbb{N}^*$.
+
 **b)** Déterminer la limite de la suite $(I_n)$.
 
 
@@ -102,15 +115,25 @@ $$\forall n \in \mathbb{N}^*, \qquad 0 \leq J_n \leq \frac{1}{n+1}$$
 ###   <u>Exercice 7 :</u> ＊＊＊
 
 Soient $(x_n)$ et $(y_n)$ les suites définies pour tout entier naturel $n$ non nul par :
-$$x_n = \int_0^1 t^n \cos(t) dt \qquad \text{et} \qquad y_n = \int_0^1t^n \sin(t) dt$$
+
+$$\displaystyle x_n = \int_0^1 t^n \cos(t) dt \qquad \text{et} \qquad y_n = \int_0^1t^n \sin(t) dt$$
+
 **1.a)** Montrer que la suite $(x_y)$ est à termes positifs.
+
 **b)** Étudier le sens de variation de la suite $(x_n)$.
+
 **c)** Montrer que $(x_n)$ converge.
+
 **2.a)** Démontrer que :
-$$\forall n \in \mathbb{N}^*, \qquad x_n \leq \frac{1}{n+1}$$
+
+$$\displaystyle \forall n \in \mathbb{N}^*, \qquad x_n \leq \frac{1}{n+1}$$
+
 **b)** En déduire la limite de la suite $(x_n)$.
+
 **3.a)** En intégrant par parties, montrer que :
-$$\forall n \in \mathbb{N}^*, \qquad x_{n+1} = -(n+1)y_n + \sin(1)$$
+
+$$\displaystyle \forall n \in \mathbb{N}^*, \qquad x_{n+1} = -(n+1)y_n + \sin(1)$$
+
 **b)** En déduire la limite de la suite $(y_n)$.
 
 
@@ -122,8 +145,11 @@ $$\forall n \in \mathbb{N}^*, \qquad x_{n+1} = -(n+1)y_n + \sin(1)$$
 Soit $f$ la fonction définie sur $\mathbb{R}^{+*}$ par $\displaystyle f(x) = x - \frac{\ln(x)}{x}$. On note $\mathcal{C}$ sa courbe représentative et $(d)$ la droite d'équation $y = x$ dans un repère orthonormé du plan.
 
 **1)** Déterminer la position relative de $\mathcal{C}$ par rapport à $(d)$.
+
 **2)** Soit $\alpha \in ]1 \; ; \; +\infty[$. On désigne par $\mathcal{A}(\alpha)$ l'aire, en unité d'aire, de la partie du plan délimitée par la courbe $\mathcal{C}$, la droite $(d)$ et les droites d'équations $x = 1$ et $x = \alpha$.
+
 **a)** Écrire $\mathcal{A}(\alpha)$ à l'aide d'une intégrale.
+
 **b)** Déterminer  $\displaystyle \lim_{\alpha \rightarrow +\infty}\mathcal{A}(\alpha)$ et interpréter ce résultat.
 
 
@@ -143,15 +169,21 @@ Calculer  $\displaystyle \int_{0}^{\pi} e^x \cos(2x) dx$.
 Dans chacun des cas suivants, pour tout entier naturel $n$, exprimer le terme général de la suite $(I_n)$ en fonction de $n$, puis en déduire la limite de la suite $(I_n)$.
 
 **1)** Par primitive :
-$$I_n = \int_{e^n}^{e^{n+2}}\frac{\ln(x)}{x}dx$$
+
+$$\displaystyle I_n = \int_{e^n}^{e^{n+2}}\frac{\ln(x)}{x}dx$$
+
 **2)** En intégrant par parties :
-$$I_n = \int_0^1 (x+2)e^{-nx} dx$$
+
+$$\displastyle I_n = \int_0^1 (x+2)e^{-nx} dx$$
+
 
 **3)** En intégrant par parties :
-$$I_n = \int_{1}^{e} x^{n-1} \ln(x) dx$$
+
+$$\displaystyle I_n = \int_{1}^{e} x^{n-1} \ln(x) dx$$
 
 **4)** Sans indice, sinon ce n'est pas amusant (hardcore celui-ci) :
-$$I_n = \int_{0}^{\pi}x^2\cos(nx)dx$$
+
+$$\displaystyle I_n = \int_{0}^{\pi}x^2\cos(nx)dx$$
 
 <!-- Configuration MathJax -->
 <script>
