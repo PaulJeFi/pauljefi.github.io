@@ -1,5 +1,0 @@
-<script type="text/javascript"
-  id="MathJax-script"
-  async
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
