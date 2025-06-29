@@ -37,13 +37,40 @@ $\displaystyle C(p) = K_P \frac{1+a\tau p}{1+\tau p}$ avec $a > 1$, où $K_P$ et
 
 ![](./tableau_correcteur.png)
 
+<!-- Configuration MathJax -->
 <script>
 window.MathJax = {
   tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  options: {
+    renderActions: {
+      findScript: [10, function (doc) {
+        for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+          const display = !!node.type.match(/; *mode=display/);
+          const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+          const text = document.createTextNode('');
+          node.parentNode.replaceChild(text, node);
+          math.start = { node: text, delim: '', n: 0 };
+          math.end = { node: text, delim: '', n: 0 };
+          doc.math.push(math);
+        }
+      }, '']
+    }
   }
 };
 </script>
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
+
+<!-- (optionnel) Un peu de style pour centrer mieux -->
+<style>
+mjx-container[display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+</style>
+
