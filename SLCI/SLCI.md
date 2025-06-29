@@ -36,3 +36,7 @@ $\displaystyle C(p) = K_P \frac{1+a\tau p}{1+\tau p}$ avec $a > 1$, où $K_P$ et
 ## Tableau récapitulatif
 
 ![](./tableau_correcteur.png)
+
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
