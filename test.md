@@ -7,7 +7,7 @@ title: Page d'exemple
     id="MathJax-script"
     async
     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
+</script>
 
 Voici une équation en ligne : \( E = mc^2 \)
 
