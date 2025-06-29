@@ -94,7 +94,7 @@ $$\displaystyle I_n = \int_0^1 \frac{1}{1+x^n} dx \qquad \text{et} \qquad J_n = 
 
 **1.a)** Montrer que :
 
-$$\displastyle \forall x \in [0\; ; \; 1], \qquad \frac{1}{1+x^n} \leq 1$$
+$$\displaystyle \forall x \in [0\; ; \; 1], \qquad \frac{1}{1+x^n} \leq 1$$
 
 **b)** en déduire que la suite $(I_n)$ est majorée par $1$.
 
@@ -174,7 +174,7 @@ $$\displaystyle I_n = \int_{e^n}^{e^{n+2}}\frac{\ln(x)}{x}dx$$
 
 **2)** En intégrant par parties :
 
-$$\displastyle I_n = \int_0^1 (x+2)e^{-nx} dx$$
+$$\displaystyle I_n = \int_0^1 (x+2)e^{-nx} dx$$
 
 
 **3)** En intégrant par parties :
