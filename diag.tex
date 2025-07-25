@@ -57,7 +57,11 @@ On s'intéresse réellement au théorème suivant :
 \end{proof}
 
 \begin{remark}
-    Pour montrer que $0$ est une valeur propre de $A$, on pouvait aussi procéder comme suit : comme $\operatorname{rg}(A)=1$, on a $\det(A) = 0$. Par ailleurs, on a $\displaystyle \det(A) = \prod_{\mu \in \operatorname{Sp}(A)} \mu^{m_\mu(A)}$. On tire donc \\$\displaystyle \prod_{\mu \in \operatorname{Sp}(A)} \mu^{m_\mu(A)} = 0$, donc par la règle du produit nul, $0 \in \operatorname{Sp}(A)$.
+    Pour montrer que $0$ est une valeur propre de $A$, on pouvait aussi procéder comme suit : comme $\operatorname{rg}(A)=1$, on a $\det(A) = 0$. Par ailleurs, on a $\displaystyle \det(A) = \!\!\!\!\!\! \prod_{\mu \in \operatorname{Sp}(A)} \!\!\!\!\! \mu^{m_\mu(A)}$. On tire donc \\$\displaystyle \prod_{\mu \in \operatorname{Sp}(A)}  \!\!\!\!\! \mu^{m_\mu(A)} = 0$, donc par la règle du produit nul, $0 \in \operatorname{Sp}(A)$.
+\end{remark}
+
+\begin{remark}
+    Comme $0$ est valeur propre de $A$, on a $\displaystyle \det(A) = \!\!\!\!\!\! \prod_{\mu \in \operatorname{Sp}(A)} \!\!\!\!\! \mu^{m_\mu(A)} = 0$, d'où on retrouve le fait qu'une matrice de rang $1$ n'est pas inversible.
 \end{remark}
 
 On en déduit alors la proposition ci-après :
@@ -67,7 +71,7 @@ On en déduit alors la proposition ci-après :
 \end{proposition}
 
 \begin{proof}
-    $A$ est diagonalisable si et seulement si pour tout $\mu \in \operatorname{Sp}(A)$, $\dim(E_\mu(A)) = m_\mu(A)$. Il faut donc, d'après ce qui précède, $m_0(A) = \dim(E_0(A)) = n-1$ et une autre valeur propre $\lambda \neq 0$ avec $m_\lambda(A) = 1$. On a de plus $\displaystyle \operatorname{Tr}(A) = \sum_{\mu \in \operatorname{Sp}(A)} \mu \times m_\mu(A) = 1\times \lambda + 0(n-1) = \lambda$.
+    $A$ est diagonalisable si et seulement si pour tout $\mu \in \operatorname{Sp}(A)$, $\dim(E_\mu(A)) = m_\mu(A)$. Il faut donc, d'après ce qui précède, $m_0(A) = \dim(E_0(A)) = n-1$ et une autre valeur propre $\lambda \neq 0$ avec $m_\lambda(A) = 1$. On a de plus $\displaystyle \operatorname{Tr}(A) = \!\!\!\!\!\! \sum_{\mu \in \operatorname{Sp}(A)} \!\!\!\!\! \mu \times m_\mu(A) = 1\times \lambda + 0(n-1) = \lambda$.
 \end{proof}
 
 On remarque que si $n=1$, alors $A \in \mathcal{M}_{n}(\mathbb{R})$ est déjà diagonale, et son unique valeur propre est son seul coefficient. Une conséquence immédiate de la proposition précédente est le théorème suivant :
@@ -126,7 +130,7 @@ On peut généraliser ce résultat au cas où $A$ n'est pas diagonalisable :
         0 & \dots & 0 & 0 & 0 \\
     \end{pmatrix}$$
     
-    On vérifie facilement par calcul matriciel que $T^2 = 0_{\mathcal{M}_{n}(\mathbb{R})}$, d'où finalement : $$A^2 = PTP^{-1} = PTP^{-1}PTP^{-1} = PT^2P^{-1} = 0_{\mathcal{M}_{n}(\mathbb{R})} = \operatorname{Tr}(A)A$$
+    On vérifie facilement par calcul matriciel que $T^2 = 0_{\mathcal{M}_{n}(\mathbb{R})}$ (puisque matrice triangulaire supérieure de trace nulle), d'où finalement : $$A^2 = PTP^{-1} = PTP^{-1}PTP^{-1} = PT^2P^{-1} = 0_{\mathcal{M}_{n}(\mathbb{R})} = \operatorname{Tr}(A)A$$
 \end{remark}
 
 De ce résultat, on déduit le théorème suivant :
