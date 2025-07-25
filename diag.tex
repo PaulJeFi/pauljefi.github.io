@@ -178,7 +178,7 @@ Et dans le cas des matrices de rang $1$, on a le théorème suivant :
 \begin{proof}
     \begin{itemize}
         \item Si $\operatorname{Tr}(A) = 0$, alors comme $A^k = 0$ pour tout entier $k \geq 2$,\\ on a $\displaystyle e^A = \sum_{k=0}^{+\infty} \frac{1}{k!}A^k = A^0 + A + \sum_{k=2}^{+\infty} \frac{1}{k!}A^k = I_n + A$.
-        \item Si $\operatorname{Tr}(A) \neq 0$, alors d'après ce qui précède, $A$ est diagonalisable sous la forme $A = P \operatorname{diag}(\operatorname{Tr}(A), 0, \dots, 0)P^{-1}$ avec $P \in \mathcal{G}\ell_n(\mathbb{R})$. On montre par une récurrence immédiate que pour tout $k \in \mathbb{N}$,\\ $A^k =  P \operatorname{diag}(\operatorname{Tr}(A), 0, \dots, 0)^kP^{-1} =  P \operatorname{diag}\left(\operatorname{Tr}(A)^k, 0, \dots, 0\right)P^{-1}$. On a alors :
+        \item Si $\operatorname{Tr}(A) \neq 0$, alors d'après ce qui précède, $A$ est diagonalisable sous la forme \\ $A = P \operatorname{diag}(\operatorname{Tr}(A), 0, \dots, 0)P^{-1}$ avec $P \in \mathcal{G}\ell_n(\mathbb{R})$. On montre par une récurrence immédiate que pour tout $k \in \mathbb{N}$,\\ $A^k =  P \operatorname{diag}(\operatorname{Tr}(A), 0, \dots, 0)^kP^{-1} =  P \operatorname{diag}\left(\operatorname{Tr}(A)^k, 0, \dots, 0\right)P^{-1}$. On a alors :
         \begin{align*}
             e^A &= \sum_{k=0}^{+\infty} \frac{1}{k!}A^k\\
             &= \sum_{k=0}^{+\infty}  \frac{1}{k!} P \operatorname{diag}(\operatorname{Tr}(A), 0, \dots, 0)P^{-1}\\
