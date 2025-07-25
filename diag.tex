@@ -234,22 +234,22 @@ On a alors le théorème suivant, qui est une généralisation du théorème pr�
 \begin{theorem}
     Soit $A \in \mathcal{M}_{n}(\mathbb{R})$ une matrice de rang $1$ et $f$ une fonction développable en série entière en $0$ de rayon de convergence infini.
     \begin{itemize}
-        \item Si $\operatorname{Tr}(A) = 0$, alors $f(A) = I_n + f'(0) A$.
-        \item Si $\operatorname{Tr}(A) \neq 0$, alors $\displaystyle f(A) = I_n + \frac{f(\operatorname{Tr}(A))-f(0)}{\operatorname{Tr(A)}} A$.
+        \item Si $\operatorname{Tr}(A) = 0$, alors $f(A) = f(0) I_n + f'(0) A$.
+        \item Si $\operatorname{Tr}(A) \neq 0$, alors $\displaystyle f(A) = f(0) I_n + \frac{f(\operatorname{Tr}(A))-f(0)}{\operatorname{Tr(A)}} A$.
     \end{itemize}
 \end{theorem}
 
 \begin{proof}
     \begin{itemize}
-        \item Si $\operatorname{Tr}(A) = 0$, alors comme $A^k = 0$ pour tout entier $k \geq 2$,\\ on a $\displaystyle f(A) = \sum_{k=0}^{+\infty} \frac{f^{k}(0)}{k!}A^k = A^0 + f'(0) A + \sum_{k=2}^{+\infty} \frac{1}{k!}A^k = I_n + f'(0) A$.
+        \item Si $\operatorname{Tr}(A) = 0$, alors comme $A^k = 0$ pour tout entier $k \geq 2$,\\ on a $\displaystyle f(A) = \sum_{k=0}^{+\infty} \frac{f^{k}(0)}{k!}A^k = f(0) A^0 + f'(0) A + \sum_{k=2}^{+\infty} \frac{1}{k!}A^k = f(0) I_n + f'(0) A$.
         \item Si $\operatorname{Tr}(A) \neq 0$, on utilise le fait que pour tout $k \in \mathbb{N}^*$, on a $A^k = \operatorname{Tr}(A)^{k-1}A$ :
     \begin{align*}
         f(A) &= \sum_{k=0}^{+\infty} \frac{f^{(k)}(0)}{k!} A^k \\
-        &= I_n + \sum_{k=1}^{+\infty} \frac{f^{(k)}(0)}{k!} A^k \\
-        &= I_n + \sum_{k=1}^{+\infty} \frac{f^{(k)}(0)}{k!} \operatorname{Tr}(A)^{k-1}A\\
-        &= I_n + \frac{1}{\operatorname{Tr}(A)}\sum_{k=1}^{+\infty} \frac{f^{(k)}(0)}{k!} \operatorname{Tr}(A)^k A \\
-        &= I_n + \frac{1}{\operatorname{Tr}(A)} \left(\sum_{k=0}^{+\infty} \frac{f^{(k)}(0)}{k!} \operatorname{Tr}(A)^k - \frac{f^{(0)}}{0!}\operatorname{Tr}(A)^0\right)A \\
-        &= I_n + \frac{f(\operatorname{Tr}(A))-f(0)}{\operatorname{Tr}(A)}A
+        &= f(0) I_n + \sum_{k=1}^{+\infty} \frac{f^{(k)}(0)}{k!} A^k \\
+        &= f(0) I_n + \sum_{k=1}^{+\infty} \frac{f^{(k)}(0)}{k!} \operatorname{Tr}(A)^{k-1}A\\
+        &= f(0) I_n + \frac{1}{\operatorname{Tr}(A)}\sum_{k=1}^{+\infty} \frac{f^{(k)}(0)}{k!} \operatorname{Tr}(A)^k A \\
+        &= f(0) I_n + \frac{1}{\operatorname{Tr}(A)} \left(\sum_{k=0}^{+\infty} \frac{f^{(k)}(0)}{k!} \operatorname{Tr}(A)^k - \frac{f^{(0)}}{0!}\operatorname{Tr}(A)^0\right)A \\
+        &= f(0) I_n + \frac{f(\operatorname{Tr}(A))-f(0)}{\operatorname{Tr}(A)}A
     \end{align*}
     \end{itemize}
 \end{proof}
