@@ -15,7 +15,7 @@
 \newtheorem*{cor}{Corollaire}
 \newtheorem*{definition}{Définition}
 
-\title{Diagonalisation des matrices carrées réelles de rang 1}
+\title{Autour des matrices carrées réelles de rang 1}
 \date{\today}
 \author{Paul JÉRÔME-\--FILIO}
 
@@ -174,7 +174,7 @@ Et dans le cas des matrices de rang $1$, on a le théorème suivant :
 \begin{proof}
     \begin{itemize}
         \item Si $\operatorname{Tr}(A) = 0$, alors comme $A^k = 0$ pour tout entier $k \geq 2$,\\ on a $\displaystyle e^A = \sum_{k=0}^{+\infty} \frac{1}{k!}A^k = A^0 + A + \sum_{k=2}^{+\infty} \frac{1}{k!}A^k = I_n + A$.
-        \item Si Si $\operatorname{Tr}(A) \neq 0$, alors d'après ce qui précède, $A$ est diagonalisable sous la forme $A = P \operatorname{diag}(\operatorname{Tr}(A), 0, \dots, 0)P^{-1}$ avec $P \in \mathcal{G}\ell_n(\mathbb{R})$. On montre par une récurrence immédiate que pour tout $k \in \mathbb{N}$,\\ $A^k =  P \operatorname{diag}(\operatorname{Tr}(A), 0, \dots, 0)^kP^{-1} =  P \operatorname{diag}\left(\operatorname{Tr}(A)^k, 0, \dots, 0\right)P^{-1}$. On a alors :
+        \item Si $\operatorname{Tr}(A) \neq 0$, alors d'après ce qui précède, $A$ est diagonalisable sous la forme $A = P \operatorname{diag}(\operatorname{Tr}(A), 0, \dots, 0)P^{-1}$ avec $P \in \mathcal{G}\ell_n(\mathbb{R})$. On montre par une récurrence immédiate que pour tout $k \in \mathbb{N}$,\\ $A^k =  P \operatorname{diag}(\operatorname{Tr}(A), 0, \dots, 0)^kP^{-1} =  P \operatorname{diag}\left(\operatorname{Tr}(A)^k, 0, \dots, 0\right)P^{-1}$. On a alors :
         \begin{align*}
             e^A &= \sum_{k=0}^{+\infty} \frac{1}{k!}A^k\\
             &= \sum_{k=0}^{+\infty}  \frac{1}{k!} P \operatorname{diag}(\operatorname{Tr}(A), 0, \dots, 0)P^{-1}\\
@@ -218,5 +218,49 @@ Cependant, il est nécessaire d'effectuer une diagonalisation complète pour cal
 \begin{example}
     Le calcul de l'exemple précédent est alors simplifié : il n'y a plus à effectuer la réduction matricielle. On a $\exp\begin{pmatrix} 1 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix} + \dfrac{e^3 - 1}{3} \begin{pmatrix} 1 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & 1 \end{pmatrix} = \setlength{\delimitershortfall}{0pt} \begin{pmatrix} \dfrac{e^3 + 2}{3} & \dfrac{e^3-1}{3} & \dfrac{e^3-1}{3} \\[2ex] \dfrac{e^3-1}{3} & \dfrac{e^3 + 2}{3} & \dfrac{e^3-1}{3} \\[2ex] \dfrac{e^3-1}{3} & \dfrac{e^3-1}{3} & \dfrac{e^3 + 2}{3} \end{pmatrix}$.
 \end{example}
+
+On peut généraliser ce résultat aux fonctions développables en série entière.
+
+\begin{definition}
+    Soit $f$ une fonction développable en série entière en $0$, de rayon de convergence infini. On définit l'image d'une matrice $M \in \mathcal{M}_{n}(\mathbb{R})$ par $f$, notée $f(M)$, par la matrice image de $M$ par l'application
+    \begin{align*}
+    f : \mathcal{M}_{n}(\mathbb{R}) &\longrightarrow \mathcal{M}_{n}(\mathbb{R})\\
+    M &\longmapsto f(M) = \sum_{k=0}^{+\infty} \frac{f^{(k)}}{k!}M^k
+    \end{align*}
+\end{definition}
+
+On a alors le théorème suivant, qui est une généralisation du théorème précédent :
+
+\begin{theorem}
+    Soit $A \in \mathcal{M}_{n}(\mathbb{R})$ une matrice de rang $1$ et $f$ une fonction développable en série entière en $0$ de rayon de convergence infini.
+    \begin{itemize}
+        \item Si $\operatorname{Tr}(A) = 0$, alors $f(A) = I_n + f'(0) A$.
+        \item Si $\operatorname{Tr}(A) \neq 0$, alors $\displaystyle f(A) = I_n + \frac{f(\operatorname{Tr}(A))-f(0)}{\operatorname{Tr(A)}} A$.
+    \end{itemize}
+\end{theorem}
+
+\begin{proof}
+    \begin{itemize}
+        \item Si $\operatorname{Tr}(A) = 0$, alors comme $A^k = 0$ pour tout entier $k \geq 2$,\\ on a $\displaystyle f(A) = \sum_{k=0}^{+\infty} \frac{f^{k}(0)}{k!}A^k = A^0 + f'(0) A + \sum_{k=2}^{+\infty} \frac{1}{k!}A^k = I_n + f'(0) A$.
+        \item Si $\operatorname{Tr}(A) \neq 0$, on utilise le fait que pour tout $k \in \mathbb{N}^*$, on a $A^k = \operatorname{Tr}(A)^{k-1}A$ :
+    \begin{align*}
+        f(A) &= \sum_{k=0}^{+\infty} \frac{f^{(k)}(0)}{k!} A^k \\
+        &= I_n + \sum_{k=1}^{+\infty} \frac{f^{(k)}(0)}{k!} A^k \\
+        &= I_n + \sum_{k=1}^{+\infty} \frac{f^{(k)}(0)}{k!} \operatorname{Tr}(A)^{k-1}A\\
+        &= I_n + \frac{1}{\operatorname{Tr}(A)}\sum_{k=1}^{+\infty} \frac{f^{(k)}(0)}{k!} \operatorname{Tr}(A)^k A \\
+        &= I_n + \frac{1}{\operatorname{Tr}(A)} \left(\sum_{k=0}^{+\infty} \frac{f^{(k)}(0)}{k!} \operatorname{Tr}(A)^k - \frac{f^{(0)}}{0!}\operatorname{Tr}(A)^0\right)A \\
+        &= I_n + \frac{f(\operatorname{Tr}(A))-f(0)}{\operatorname{Tr}(A)}A
+    \end{align*}
+    \end{itemize}
+\end{proof}
+
+\begin{remark}
+    Si $\operatorname{Tr}(A) = 0$, la formule du deuxième point ``devient'' vraie car
+    $$\displaystyle \lim_{x \to 0} \frac{f(x) - f(0)}{x} =\lim_{x \to 0} \frac{f(x) - f(0)}{x - 0} = f'(0)$$
+\end{remark}
+
+\begin{remark}
+    On peut, de même que l'exponentielle, montrer que si $\operatorname{Tr}(A) \neq 0$, alors il existe $P \in \mathcal{G}\ell_n(\mathbb{R})$ telle que $f(A) = P\operatorname{diag}(f(\operatorname{Tr}(A)), f(0), \dots, f(0))P^{-1}$, mais cette formule très calculatoire n'a que peu d'intérêt en pratique.
+\end{remark}
 
 \end{document}
