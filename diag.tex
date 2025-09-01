@@ -21,6 +21,7 @@
 
 \begin{document}
 \maketitle
+\allowdisplaybreaks
 
 Soit $n \in \mathbb{N}^*$. On s'intéresse à la diagonalisabilité et diagonalisation des matrices de $\mathcal{M}_{n}(\mathbb{R})$. Dans un premier temps, on cherche à montrer le théorème suivant :
 
@@ -130,7 +131,7 @@ On peut généraliser ce résultat au cas où $A$ n'est pas diagonalisable :
         0 & \dots & 0 & 0 & 0 \\
     \end{pmatrix}$$
     
-    On vérifie facilement par calcul matriciel que $T^2 = 0_{\mathcal{M}_{n}(\mathbb{R})}$ (puisque matrice triangulaire supérieure de trace nulle), d'où finalement : $$A^2 = PTP^{-1} = PTP^{-1}PTP^{-1} = PT^2P^{-1} = 0_{\mathcal{M}_{n}(\mathbb{R})} = \operatorname{Tr}(A)A$$
+    On vérifie facilement par calcul matriciel que $T^2 = 0_{\mathcal{M}_{n}(\mathbb{R})}$ (puisque matrice triangulaire supérieure de diagonale nulle), d'où finalement : $$A^2 = PTP^{-1} = PTP^{-1}PTP^{-1} = PT^2P^{-1} = 0_{\mathcal{M}_{n}(\mathbb{R})} = \operatorname{Tr}(A)A$$
 \end{remark}
 
 De ce résultat, on déduit le théorème suivant :
@@ -156,6 +157,52 @@ De ce résultat, on déduit le théorème suivant :
 \end{example}
 
 On peut maintenant s'intéresser à l'exponentiation de matrices de rang $1$.
+
+\begin{definition}
+    On définit le produit scalaire canonique sur $\mathcal{M}_n(\mathbb{R})$ par :
+    \begin{align*}
+    \left(\cdot|\cdot\right) : \mathcal{M}_{n}(\mathbb{R}) \times \mathcal{M}_{n}(\mathbb{R}) &\longrightarrow \mathbb{R}\\
+    (A, B) &\longmapsto \operatorname{Tr}\left(A^\top B\right)
+    \end{align*}
+    On appelle norme euclidienne sur $\mathcal{M}_n(\mathbb{R})$ l'application :
+    \begin{align*}
+    \left|\left|\cdot\right|\right| : \mathcal{M}_{n}(\mathbb{R}) &\longrightarrow \mathbb{R_+}\\
+    M &\longmapsto \sqrt{\left(M|M\right)}
+    \end{align*}
+\end{definition}
+
+\begin{theorem}
+    La norme euclidienne est sous-multiplicative, c'est-à-dire que pour tous $A, B \in \mathcal{M}_n(\mathbb{R})$, on a $\left|\left| AB \right|\right| \leq \left|\left| A \right|\right| \left|\left| B \right|\right|$.
+\end{theorem}
+
+\begin{proof}
+
+    Soit $M \in \mathcal{M}_{n}(\mathbb{R})$. On aura besoin de l'égalité suivante :
+    $$\left|\left|M\right|\right|^2 = \left(M|M\right) = \operatorname{Tr}\left(M^\top M\right) = \sum_{i=1}^n \left[M^\top M\right]_{ii} = \sum_{i=1}^n\sum_{j=1}^n \left[M^\top\right]_{ij} \left[M\right]_{ji} = \sum_{i=1}^n\sum_{j=1}^n \left[M\right]_{ji}^2$$
+    
+    Alors : $\displaystyle \left(\left|\left|A\right|\right|\left|\left|B\right|\right|\right)^2 = \left(\sum_{i=1}^n\sum_{j=1}^n \left[A\right]_{ji}^2\right) \left(\sum_{i=1}^n\sum_{j=1}^n \left[B\right]_{ji}^2\right) = \sum_{i=1}^n  \sum_{j=1}^n  \sum_{k=1}^n  \sum_{l=1}^n \left[A\right]_{jk}^2 \left[B\right]_{ki}^2$
+    
+    Et :
+    
+    \begin{align*}
+        \left|\left|AB\right|\right|^2 &= \sum_{i=1}^n  \sum_{j=1}^n \left[AB\right]_{ji}^2 = \sum_{i=1}^n  \sum_{j=1}^n \left(\sum_{k=1}^n \left[A\right]_{jk} \left[B\right]_{ki}\right)^2 \\
+        & \leq \sum_{i=1}^n  \sum_{j=1}^n \left(\sum_{k=1}^n \left[A\right]_{jk}^2\right) \left(\sum_{l=1}^n \left[B\right]_{li}^2\right) \qquad \text{par l'inégalité de Cauchy-Schwarz}\\
+        & \leq \sum_{i=1}^n  \sum_{j=1}^n  \sum_{k=1}^n  \sum_{l=1}^n \left[A\right]_{jk}^2 \left[B\right]_{ki}^2 \\
+        & \leq \left(\left|\left|A\right|\right|\left|\left|B\right|\right|\right)^2
+    \end{align*}
+    
+    Puis par passage à la racine, les normes étant positives, on a bien $\left|\left| AB \right|\right| \leq \left|\left| A \right|\right| \left|\left| B \right|\right|$.
+
+    
+\end{proof}
+
+\begin{proposition}
+    Soit $M \in \mathcal{M}_{n}(\mathbb{R})$. La série $\displaystyle \sum_{k \in \mathbb{N}} \frac{1}{k!}M^k$ est absolument convergente.
+\end{proposition}
+
+\begin{proof}
+    Soit $k \in \mathbb{N}$. D'après le théorème précédent, on a $\displaystyle \left|\left|\frac{1}{k!}M^k\right|\right| = \frac{1}{k}\left|\left|M^k\right|\right| \leq \frac{1}{k}\left|\left|M\right|\right|^k$ qui est le terme général d'une série convergente de réels positifs, donc par comparaison $\displaystyle \sum_{k \in \mathbb{N}} \frac{1}{k!}M^k$ converge absolument.
+\end{proof}
 
 \begin{definition}
     On définit l'exponentielle d'une matrice $M \in \mathcal{M}_{n}(\mathbb{R})$, notée $\exp(M) = e^M$, par la matrice image de $M$ par l'application
