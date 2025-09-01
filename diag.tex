@@ -180,14 +180,14 @@ On peut maintenant s'intéresser à l'exponentiation de matrices de rang $1$.
     Soit $M \in \mathcal{M}_{n}(\mathbb{R})$. On aura besoin de l'égalité suivante :
     $$\left|\left|M\right|\right|^2 = \left(M|M\right) = \operatorname{Tr}\left(M^\top M\right) = \sum_{i=1}^n \left[M^\top M\right]_{ii} = \sum_{i=1}^n\sum_{j=1}^n \left[M^\top\right]_{ij} \left[M\right]_{ji} = \sum_{i=1}^n\sum_{j=1}^n \left[M\right]_{ji}^2$$
     
-    Alors : $\displaystyle \left(\left|\left|A\right|\right|\left|\left|B\right|\right|\right)^2 = \left(\sum_{i=1}^n\sum_{j=1}^n \left[A\right]_{ji}^2\right) \left(\sum_{i=1}^n\sum_{j=1}^n \left[B\right]_{ji}^2\right) = \sum_{i=1}^n  \sum_{j=1}^n  \sum_{k=1}^n  \sum_{l=1}^n \left[A\right]_{jk}^2 \left[B\right]_{ki}^2$
+    Alors : $\displaystyle \left(\left|\left|A\right|\right|\left|\left|B\right|\right|\right)^2 = \left(\sum_{i=1}^n\sum_{j=1}^n \left[A\right]_{ji}^2\right) \left(\sum_{i=1}^n\sum_{j=1}^n \left[B\right]_{ji}^2\right) = \sum_{i=1}^n  \sum_{j=1}^n  \sum_{k=1}^n  \sum_{l=1}^n \left[A\right]_{jk}^2 \left[B\right]_{li}^2$
     
     Et :
     
     \begin{align*}
         \left|\left|AB\right|\right|^2 &= \sum_{i=1}^n  \sum_{j=1}^n \left[AB\right]_{ji}^2 = \sum_{i=1}^n  \sum_{j=1}^n \left(\sum_{k=1}^n \left[A\right]_{jk} \left[B\right]_{ki}\right)^2 \\
         & \leq \sum_{i=1}^n  \sum_{j=1}^n \left(\sum_{k=1}^n \left[A\right]_{jk}^2\right) \left(\sum_{l=1}^n \left[B\right]_{li}^2\right) \qquad \text{par l'inégalité de Cauchy-Schwarz}\\
-        & \leq \sum_{i=1}^n  \sum_{j=1}^n  \sum_{k=1}^n  \sum_{l=1}^n \left[A\right]_{jk}^2 \left[B\right]_{ki}^2 \\
+        & \leq \sum_{i=1}^n  \sum_{j=1}^n  \sum_{k=1}^n  \sum_{l=1}^n \left[A\right]_{jk}^2 \left[B\right]_{li}^2 \\
         & \leq \left(\left|\left|A\right|\right|\left|\left|B\right|\right|\right)^2
     \end{align*}
     
