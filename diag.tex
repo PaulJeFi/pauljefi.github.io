@@ -318,4 +318,22 @@ On a alors le théorème suivant, qui est une généralisation du théorème pr�
     En réalité, les formules du théorème précédent sont valables si $f$ n'est pas développable en série entière ou de rayon de convergence fini, tant que $f$ est dérivable en $0$. Cependant, il faudrait pour montrer cela changer notre définition de l'image d'une matrice par une série entière, et adopter une définition \emph{via} le calcul fonctionnel appliqué au spectre de $A$.
 \end{remark}
 
+On peut aussi déterminer des propriétés sur les projections et symétries vectorielles dans le cas de matrices de rang $1$.
+
+\begin{proposition}
+    Soit $A \in \mathcal{M}_{n}(\mathbb{R})$ une matrice de rang $1$. $A$ est la matrice d'une projection vectorielle si et seulement si $\operatorname{Tr}(A) = 1$.
+\end{proposition}
+
+\begin{proof}
+    $A$ est la matrice d'une projection vectorielle si et seulement si $A = A^2 = \operatorname{Tr}(A) A$ si et seulement si $\operatorname{Tr}(A) = 1$.
+\end{proof}
+
+\begin{proposition}
+    Il n'existe pas de symétrie vectorielle de rang $1$ dans  $\mathcal{M}_{n}(\mathbb{R})$ avec $n \geq 2$.
+\end{proposition}
+
+\begin{proof}
+    On raisonne par l'absurde. Soit $A \in \mathcal{M}_{n}(\mathbb{R})$ une matrice de rang $1$ qui soit la matrice d'une symétrie vectorielle. Alors $A^2 = I_n$ d'où $A$ est inversible et $A^{-1} = A$, ce qui est absurde puisque $A$ est de rang $1$ donc pas inversible.
+\end{proof}
+
 \end{document}
