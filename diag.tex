@@ -26,11 +26,11 @@
 Soit $n \in \mathbb{N}^*$. On s'intéresse à la diagonalisabilité et diagonalisation des matrices de $\mathcal{M}_{n}(\mathbb{R})$. Dans un premier temps, on cherche à montrer le théorème suivant :
 
 \begin{theorem}
-    Une matrice $A \in \mathcal{M}_{n}(\mathbb{R})$ est de rang $1$ si et seulement s'il existe $X, Y \in \mathcal{M}_{n, 1}(\mathbb{R})$ tels que $A = XY^\top$.
+    Une matrice $A \in \mathcal{M}_{n}(\mathbb{R})$ est de rang $1$ si et seulement s'il existe deux vecteurs colonne $X, Y \in \mathcal{M}_{n, 1}(\mathbb{R})$ non-nuls tels que $A = XY^\top$.
 \end{theorem}
 
 \begin{proof}
-    $\boxed{\Rightarrow}$ Soit $A \in \mathcal{M}_{n}(\mathbb{R})$ une matrice de rang $1$. On note $c_1, c_2, \dots, c_n$ ses colonnes. Si $A$ est la matrice nulle, le sens direct du théorème est évidemment vrai. On suppose donc que $A$ n'est pas la matrice nulle. Il existe alors $i \in \llbracket 1, n \rrbracket$ telle que $c_i$ n'est pas la colonne nulle. Il existe donc $\left(\lambda_k\right)_{k \in \llbracket 1, n \rrbracket} \in \mathbb{R}^{\llbracket 1, n \rrbracket}$ tel que pour tout $k \in \llbracket 1, n \rrbracket$, $c_k = \lambda_k c_i$. On a alors :
+    $\boxed{\Rightarrow}$ Soit $A \in \mathcal{M}_{n}(\mathbb{R})$ une matrice de rang $1$. On note $c_1, c_2, \dots, c_n$ ses colonnes. $A$ n'est pas la matrice nulle puisqu'elle est de rang $1$. Il existe alors $i \in \llbracket 1, n \rrbracket$ telle que $c_i$ n'est pas la colonne nulle. Il existe donc $\left(\lambda_k\right)_{k \in \llbracket 1, n \rrbracket} \in \mathbb{R}^{\llbracket 1, n \rrbracket}$ tel que pour tout $k \in \llbracket 1, n \rrbracket$, $c_k = \lambda_k c_i$. On a alors :
     
     \begin{align*}
         A &= [c_1, c_2, \dots , c_n]\\
@@ -40,6 +40,8 @@ Soit $n \in \mathbb{N}^*$. On s'intéresse à la diagonalisabilité et diagonali
         &= \begin{pmatrix}c_{i1} \\ c_{i2} \\ \vdots \\ c_{in} \end{pmatrix} \begin{pmatrix}\lambda_1 \\ \lambda_2 \\ \vdots \\ \lambda_n \end{pmatrix}^\top\\
         &= XY^\top \qquad \text{en posant}   \quad X = \begin{pmatrix}c_{i1} \\ c_{i2} \\ \vdots \\ c_{in} \end{pmatrix} \quad \text{et} \quad Y = \begin{pmatrix}\lambda_1 \\ \lambda_2 \\ \vdots \\ \lambda_n \end{pmatrix}
     \end{align*}
+    
+    Comme $c_i$ n'est pas la colonne nulle, alors $X$ est un vecteur colonne non-nul et $c_i = \lambda_i c_i$ d'où $\lambda_i = 1$, donc $Y$ est aussi un vecteur colonne non-nul.\\
     
     $\boxed{\Leftarrow}$ Réciproquement, il suffit de remonter le raisonnement ci-dessus pour montrer que si \\ $X, Y \in \mathcal{M}_{n, 1}(\mathbb{R})$, alors $\operatorname{rg}\left(XY^\top\right)=1$.
     
