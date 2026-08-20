@@ -1,8 +1,6 @@
 # Préparation à l'évaluation sur l'intégration
 <br><br>
-Ces exercices sont majoritairement tirés du livre (il ne doit y avoir que deux énoncés de moi), mais j'ai légèrement changé les énoncés, ou ai regroupé par thème des petits exercices. Certains sont faciles, d'autres moins. Je les ai classé par niveau de difficulté (le nombre d'étoiles). Nous en avons vu certains en cours avec Mme. Sevette, certains pas du tout. L'exercice 9 et la dernière question du dernier exercice sont particulièrement difficiles. Si besoin d'aide sur ce chapitre, ne surtout pas hésiter à me contacter.
-
-
+Ces exercices sont majoritairement tirés d'un livre de terminale (il ne doit y avoir que deux énoncés de moi), mais j'ai légèrement changé les énoncés, ou ai regroupé par thème des petits exercices. Certains sont faciles, d'autres moins. Je les ai classé par niveau de difficulté (le nombre d'étoiles). L'exercice 9 et la dernière question du dernier exercice sont particulièrement difficiles. Si besoin d'aide sur ce chapitre, ne surtout pas hésiter à me contacter.
 
 
 <br><br><br><br>
