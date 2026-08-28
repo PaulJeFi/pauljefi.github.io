@@ -93,13 +93,9 @@ On considère deux réels $a$ et $b$ tels que $a < b$, et une fonction $f$, de c
 
 $$\left|f'(t)\right| \le M$$
 
-2) Que vaut $\displaystyle \lim_{k \to +\infty} \frac{1}{k} \int_a^b f'(t) e^{ikt}  \mathrm{d}t$ ?
+2) Que vaut $\displaystyle \lim_{k \to +\infty} \frac{1}{k} \int_a^b f'(t) \cos(kt) \mathrm{d}t$ ?
 
 3) À l'aide d'une intégration par parties, montrer que
-
-$$\lim_{k \to +\infty} \int_a^b f(t) e^{ikt}  \mathrm{d}t = 0$$
-
-4) En déduire que
 
 $$\lim_{k \to +\infty} \int_a^b f(t) \sin(kt)  \mathrm{d}t = 0$$
 
