@@ -88,3 +88,40 @@ où $\varphi$ est une fonction définie et continue sur $[0, \pi]$ que l'on pré
 
 4) On admet si nécéssaire que $\varphi$ est dérivable sur $[0, \pi]$ et que sa dérivée est continue. Montrer, en utilisant le lemme de Riemann-Lebesgue, que
 $$\zeta(2) = \frac{\pi^2}{6}.$$
+
+<!-- Configuration MathJax -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  options: {
+    renderActions: {
+      findScript: [10, function (doc) {
+        for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+          const display = !!node.type.match(/; *mode=display/);
+          const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+          const text = document.createTextNode('');
+          node.parentNode.replaceChild(text, node);
+          math.start = { node: text, delim: '', n: 0 };
+          math.end = { node: text, delim: '', n: 0 };
+          doc.math.push(math);
+        }
+      }, '']
+    }
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+<!-- (optionnel) Un peu de style pour centrer mieux -->
+<style>
+mjx-container[display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+</style>
