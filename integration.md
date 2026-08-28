@@ -2,20 +2,22 @@
 ## Premier problème : une famille de polynômes
 
 Soit $n$ un entier naturel. Pour un entier $k$, compris entre $0$ et $n$, la $k$-ième fonction polynomiale de Bernstein est la fonction $B_k^n$ définie, pour tout $x \in [0, 1]$, par :
+
 $$B_k^n(x) = \binom{n}{k}x^k(1-x)^{n-k}$$
 1) Monter que, pour tout entier $k$ compris entre $0$ et $n$ et pour tout $x \in [0, 1]$, on a $B_k^n(x) \geq 0$.
 2) a) Montrer que, pour tout entier $k$ compris entre $0$ et $n$ et pour tout $x \in [0, 1]$, on a $B_k^n(x) = B_{n-k}^n(1-x)$.
    b) Que peut-on en déduire sur les courbes représentatives des fonctions $B_k^n$ et $B_{n-k}^n$ ?
 
 3) On suppose désormais que $k < n$.  
-   a) À l'aide d'une intégration par parties, montrer que 
+   a) À l'aide d'une intégration par parties, montrer que
+
    $$\int_0^1 x^k (1-x)^{n-k} \, \mathrm{d}x = \frac{n-k}{k+1} \int_0^1 x^{k+1} (1-x)^{n-k-1} \, \mathrm{d}x.$$  
    b) En déduire que, pour tout entier $k$ tel que $0 \leqslant k < n$,
    $$\int_0^1 B_k^n(x) \, \mathrm{d}x = \int_0^1 B_{k+1}^n(x) \, \mathrm{d}x.$$  
    c) En déduire que, pour tout entier $k$ tel que $0 \leqslant k < n$,
    $$\int_0^1 B_k^n(x) \, \mathrm{d}x = \frac{1}{n+1}.$$
 
-4) On suppose que $n$ et $k$ sont distincts et non nuls. Étudier les variations de la fonction $B_k^n$ sur $[0 \,;\, 1]$.
+5) On suppose que $n$ et $k$ sont distincts et non nuls. Étudier les variations de la fonction $B_k^n$ sur $[0 \,;\, 1]$.
 
 ---
 ## Deuxième problème : étude d'une intégrale logarithmique
@@ -27,6 +29,7 @@ $$F(x) = \int_{x}^{x^{2}} \frac{1}{\ln(t)} \, \mathrm{d}t$$
 
 1) Justifier que la fonction $t \mapsto \frac{1}{\ln(t)}$ admet des primitives sur $]1,+\infty[$. En déduire que $F$ est dérivable sur $]1,+\infty[$.
 2) En effectuant un raisonnement analogue sur $]0,1[$, montrer que $F$ est dérivable sur $D$ et établir que pour tout $x \in D$ :
+
    $$F'(x) = \frac{x-1}{\ln(x)}$$
 3) Déterminer le signe de $F'(x)$ sur $D$ et en déduire le sens de variation de $F$ sur $]0,1[$ et sur $]1,+\infty[$.
 
@@ -52,8 +55,8 @@ $$F(x) \mathop{\sim}_{x \to +\infty} \frac{x^{2}}{2\ln(x)}$$
 ---
 ## Troisième problème : un calcul de $\zeta(2)$
 
-On définit la fonction Zêta de Riemann pour tout $x \in \mathbb{R}$ par :
-$$\zeta (x) = \sum_{n=0}^{+\infty} \frac{1}{n^x}$$
+On définit la fonction Zêta de Riemann pour tout $x > 1$ par :
+$$\zeta (x) = \sum_{n=1}^{+\infty} \frac{1}{n^x}$$
 ### Partie I : le lemme de Riemann-Lebesgue
 
 On considère deux réels $a$ et $b$ tels que $a < b$, et une fonction $f$, de classe $\mathcal{C}^1$ sur $[a, b]$.
@@ -66,7 +69,7 @@ $$\left|f'(t)\right| \le M.$$
 3) À l'aide d'une intégration par parties, montrer que
 $$\lim_{k \to +\infty} \int_a^b f(t) e^{ikt} \, \mathrm{d}t = 0.$$
 4) En déduire que
-$$\lim_{k \to +\infty} \int_a^b f(t) \cos(kt) \, \mathrm{d}t = 0.$$
+$$\lim_{k \to +\infty} \int_a^b f(t) \sin(kt) \, \mathrm{d}t = 0.$$
 ### Partie II : calcul de $\zeta(2)$
 
 1) a) Pour $n$ dans $\mathbb{N}^*$, calculer :
