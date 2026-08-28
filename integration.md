@@ -5,7 +5,7 @@ Soit $n$ un entier naturel. Pour un entier $k$, compris entre $0$ et $n$, la $k$
 
 $$B_k^n(x) = \binom{n}{k}x^k(1-x)^{n-k}$$
 
-1) Monter que, pour tout entier $k$ compris entre $0$ et $n$ et pour tout $x \in [0, 1]$, on a $B_k^n(x) \geq 0$.
+1) Montrer que, pour tout entier $k$ compris entre $0$ et $n$ et pour tout $x \in [0, 1]$, on a $B_k^n(x) \geq 0$.
 
 2) a) Montrer que, pour tout entier $k$ compris entre $0$ et $n$ et pour tout $x \in [0, 1]$, on a $B_k^n(x) = B_{n-k}^n(1-x)$.
 
@@ -127,7 +127,7 @@ $$\forall n \in \mathbb{N}^*, \quad \sum_{k=1}^n \frac{1}{k^2} = \frac{\pi^2}{6}
 
 où $\varphi$ est une fonction définie et continue sur $[0, \pi]$ que l'on précisera.
 
-4) On admet si nécéssaire que $\varphi$ est dérivable sur $[0, \pi]$ et que sa dérivée est continue. Montrer, en utilisant le lemme de Riemann-Lebesgue, que
+4) On admet si nécessaire que $\varphi$ est dérivable sur $[0, \pi]$ et que sa dérivée est continue. Montrer, en utilisant le lemme de Riemann-Lebesgue, que
 
 $$\zeta(2) = \frac{\pi^2}{6}$$
 
