@@ -73,9 +73,9 @@ $$F(x) = \int_{\ln(x)}^{2\ln(x)} \frac{\mathrm{e}^{u}}{u}  \mathrm{d}u$$
 
    $$\frac{x^{2}-x}{4\ln^2(x)} \le \int_x^{x^2} \frac{1}{\ln^2(t)} \mathrm{d}t\le \frac{x^{2}-x}{\ln^2(x)}$$
 
-3) La notation $\displaystyle F(x) \mathop{\sim}_{x \to +\infty} g(x)$ signifie que $\displaystyle \lim_{x \to +\infty} \frac{F(x)}{g(x)} = 1$. En utilisant une intégration par parties sur $F(x)$, établir l'équivalent asymptotique suivant au voisinage de $+\infty$ :
+3) La notation $\displaystyle F(x) \underset{x \to +\infty}{\sim} g(x)$ signifie que $\displaystyle \lim_{x \to +\infty} \frac{F(x)}{g(x)} = 1$. En utilisant une intégration par parties sur $F(x)$, établir l'équivalent asymptotique suivant au voisinage de $+\infty$ :
 
-$$F(x) \mathop{\sim}_{x \to +\infty} \frac{x^{2}}{2\ln(x)}$$
+$$F(x) \underset{x \to +\infty}{\sim} \frac{x^{2}}{2\ln(x)}$$
 
 ---
 
